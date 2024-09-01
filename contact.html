@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <div class="nav-links">
+                <i onclick="toggleMenu()" class="fa fa-solid fa-xmark"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i onclick="toggleMenu()" class="fa fa-solid fa-bars"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23061.48796569289!2d7.405252871252154!3d43.73784955025255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc38a15fff89d%3A0xf9fce639c0ce6489!2sRoseraie%20Princesse%20Grace!5e0!3m2!1sen!2sin!4v1725118779440!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore, Karnataka , IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+1 0987654321</h5>
+                        <p>Sunday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>mail your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="./form-handler.php" method="post">
+                    <input name="name" type="text" placeholder="Enter your name" required>
+                    <input name="email" type="email" placeholder="Enter your email" required>
+                    <input name="subject" type="text" placeholder="Enter your subject" required>
+                    <textarea name="message" rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur labore mollitia ut voluptatibus
+            qui quia amet sed voluptates tempora <br> adipisci odit expedita nam eos sequi hic, aut corrupti incidunt
+            cumque
+            blanditiis inventore et quis magnam. </p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Design & Developed By Felix <i class="fa-brands fa-angellist"></i></p>
+    </section>
+
+    <script>
+        const toggleMenu = () => {
+            let navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('showMenu')
+
+        }
+    </script>
+</body>
+
+</html>
